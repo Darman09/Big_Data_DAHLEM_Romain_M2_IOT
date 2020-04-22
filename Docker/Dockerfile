@@ -25,5 +25,5 @@ RUN pip3 freeze > requirements.txt && \
 # Expoe 8000 Port
 EXPOSE 8000
 
-# Run jupyter
-CMD jupyter-notebook --no-browser --port=8000
+# Go to workspace
+CMD workspace --port 8000
