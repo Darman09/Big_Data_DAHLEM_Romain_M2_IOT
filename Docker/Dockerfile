@@ -2,7 +2,6 @@
 FROM ubuntu:18.04
 
 # Dependencies install
-RUN apt-get -y install curl
 RUN apt-get install -qy python3
 RUN apt-get install -qy python3-pip
 RUN apt-get install -qy vim
