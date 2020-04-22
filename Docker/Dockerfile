@@ -2,7 +2,6 @@ FROM ubuntu:18.04
 # Dependencies Install
 RUN apt-get update  && \
 	apt-get -y install curl && \
-	apt-get -y install curl && \
 	apt-get install -qy python3 && \
 	apt-get install -qy python3-pip && \
 	apt-get install -qy vim && \
@@ -26,4 +25,5 @@ RUN pip3 freeze > requirements.txt && \
 EXPOSE 8000
 
 # Go to workspace
-CMD workspace --port 8000
+# CMD workspace --port 8000
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
