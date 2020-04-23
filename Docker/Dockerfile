@@ -10,12 +10,13 @@ RUN apt-get update  && \
 # Install Git
 RUN apt-get -y install git
 
-# Clone git repo
-RUN git clone https://github.com/Darman09/Big_Data_DAHLEM_Romain_M2_IOT.git
 
 WORKDIR /Docker
 ADD . /workspace
 WORKDIR /workspace
+
+# Clone git repo
+RUN git clone https://github.com/Darman09/Big_Data_DAHLEM_Romain_M2_IOT.git
 
 RUN pip3 freeze > requirements.txt && \
 	pip3 install -r requirements.txt && \
