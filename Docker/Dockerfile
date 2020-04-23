@@ -26,4 +26,4 @@ EXPOSE 8000
 
 # Go to workspace
 # CMD workspace --port 8000
-CMD ["jupyter", "notebook", "--port=32769", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
