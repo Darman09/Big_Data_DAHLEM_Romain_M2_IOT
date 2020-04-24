@@ -1,4 +1,3 @@
-# Big_Data_DAHLEM_Romain_M2_IOT
 # Semaine de Formation du 20 au 24 avril 2020 - M2-IOT  
 
 _______________
