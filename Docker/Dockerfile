@@ -22,13 +22,13 @@ RUN pip3 freeze > requirements.txt && \
 	pip3 install -r requirements.txt && \
 	pip3 install jupyter && \
 	pip3 install numpy && \
+	pip3 install pandas && \
 	pip3 install Flask
 
-RUN cd /workspace/Big_Data_DAHLEM_Romain_M2_IOT/Flask
-	
+WORKDIR /workspace/Big_Data_DAHLEM_Romain_M2_IOT/Flask
 # Expoe 8000 Port
 EXPOSE 8000
 
 # Go to workspace
 # CMD workspace --port 8000
-# CMD ["python",".\Hello_World.py"]
+CMD ["python3",".\Hello_World.py"]
