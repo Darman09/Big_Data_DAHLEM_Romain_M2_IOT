@@ -31,4 +31,4 @@ EXPOSE 8000
 
 # Go to workspace
 # CMD workspace --port 8000
-CMD ["python3",".\Hello_World.py"]
+CMD ["python3","./Hello_World.py"]
