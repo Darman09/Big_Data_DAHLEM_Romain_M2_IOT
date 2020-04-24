@@ -21,6 +21,7 @@ RUN git clone https://github.com/Darman09/Big_Data_DAHLEM_Romain_M2_IOT.git
 RUN pip3 freeze > requirements.txt && \
 	pip3 install -r requirements.txt && \
 	pip3 install jupyter
+	pip3 install numpy
 
 # Expoe 8000 Port
 EXPOSE 8000
