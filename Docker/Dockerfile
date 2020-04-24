@@ -17,7 +17,12 @@ RUN git clone https://github.com/Darman09/Big_Data_DAHLEM_Romain_M2_IOT.git
 
 WORKDIR /Big_Data_DAHLEM_Romain_M2_IOT/Docker
 
-RUN pip3 install -r /Big_Data_DAHLEM_Romain_M2_IOT/Docker/requirements.txt
+
+RUN pip3 freeze > requirements.txt && \
+	pip3 install -r requirements.txt && \
+	pip3 install jupyter && \
+	pip3 install numpy && \
+	pip3 install Flask
 
 WORKDIR /Big_Data_DAHLEM_Romain_M2_IOT/Flask
 
